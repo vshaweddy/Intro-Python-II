@@ -11,4 +11,11 @@ class Room:
         return (f'This is {self.name} and it is {self.description}.')
 
     def add_item(self, item):
-        items.append(item)
+        self.items.append(item)
+
+    def remove_item(self, item):
+        self.items.remove(item)
+
+    def print_items(self):
+        for item in self.items:
+            print(f'{item}')
