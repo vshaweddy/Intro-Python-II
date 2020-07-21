@@ -46,6 +46,7 @@ player_input = ''
 
 while player_input != 'q':
     print(f'{player.current_room}')
+    print(f'{player.current_room.items}')
     print('\n')
     player_input = input("Which direction do you want to go?\n press 'n' for North, 'e' for East, 's' for South, 'w' for West. \n Let's go to: ")
     print('\n')
